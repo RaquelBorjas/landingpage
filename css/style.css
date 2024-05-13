@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root{
 	--color-background:#E0DAD5;
@@ -7,7 +6,14 @@
 	--amarillo-bonito:#D8E319;
 	--color-footer:#262526;
 	--gris-raro:#4F4A4E;
+	--negro: #00000;
 }
+
+body{
+	font-family: 'Segoe UI', 'sans-serif';
+}
+
+
 
 .wrapper-circle {
     width: 100%;
@@ -22,10 +28,19 @@
 .color-rojo{
 	color: var(--color-rojo);
 }
+
 .link123 {
 	font-weight: 400;
 	font-size: 25px;
-	
+	text-decoration: none;
+}
+
+.link123:hover{
+	font-weight: 400;
+	font-size: 26px;
+	text-decoration: none;
+	color: var(--color-footer);
+	transition: all 0.1 ease-in-out;
 }
 
 hr {
@@ -47,39 +62,37 @@ hr {
 }
 
 #proyectos {
-	
 	filter: brightness(100%);
 }
+
 #proyectos2 {
-	
 	filter: brightness(100%);
 }
+
 #proyectos3 {
-	
 	filter: brightness(100%);
 }
 
 #proyectos img {
-	
 	width: 100%;
 	filter: brightness(50%);
 }
+
 #proyectos2 img {
-	
 	width: 100%;
 	filter: brightness(50%);
 }
+
 #proyectos3 img {
-	
 	width: 100%;
 	filter: brightness(50%);
 }
 
 #contacto img {
-	
 	width: 100%;
 	filter: brightness(50%);
 }
+
 #padding {
 	padding: 5%;
 }
@@ -92,10 +105,7 @@ hr {
 .padding2 {
 	padding-top: 40%;
 	padding-left: 65%;
-	
 }
-
-
 
 .padding3 {
 	padding: 3%;
@@ -110,8 +120,89 @@ footer {
 
 #contacto {
 	filter: brightness(100%);
+	background-image: url("../img/casa-fondo.JPG");
+	background-size: cover; 
 }
 
+#contacto article{
+	
+}
 .text-alaign {
 	text-align: center;
+}
+
+.cuadradito{
+	background-color: rgba(255, 255, 255, 0.5);
+	
+}
+
+.btn-submit{
+	background-color: var(--color-footer);
+	padding: 20px 40px;
+	border-radius: 5px;
+	font-weight: 600;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.btn-submit:hover{
+	background-color: #fff;
+	color: var(--color-footer);
+	font-weight: 600;
+}
+
+
+.form-control{ 
+	background-color: transparent;
+	border: none;
+	border-bottom:3px solid #000;
+	font-weight: 600;
+	color: #000;
+	font-weight: 700;
+}
+
+
+.row {
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	#proyectos2 .probando123{
+		padding-top: 40%;
+		padding-left: 70%;
+	}
+}
+
+
+@media (max-width: 1024px){
+	#proyectos2 .probando123{
+		padding-top: 50%;
+	}
+}
+
+@media (max-width: 640px){
+	#proyectos2 .probando123 {
+		padding-top: 25%;
+		padding-left: 55%
+	}
+}
+
+
+
+
+#portada {
+	width: 100%;
+}
+
+
+
+
+
+#portada h3 {
+	top:80%;
+	left: 50%;
+	bottom: inherit;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	position: absolute;
 }

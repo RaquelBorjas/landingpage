@@ -4,11 +4,11 @@ a{
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 9999;
 	width: 100%;
-	background-color:fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .navbar-light {
 	background-color:transparent!important;
@@ -97,9 +97,12 @@ header {
 
 
 .carousel-caption{
-	display: grid !important;
-	align-content: center;
-	height: 100%;
+top:50%;
+	left: 35%;
+	bottom: inherit;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	
 }
 .carousel-item{
 	/*height: 100vh; opcional: en caso de no utilizar una imagen de fondo por slide*/
@@ -122,3 +125,5 @@ header {
 .btn-outline-success{
 	color: var(--color-azul);
 } 
+
+
